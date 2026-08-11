@@ -4,6 +4,7 @@
   "outputDirectory": "dist",
   "framework": null,
   "trailingSlash": true,
+
   "redirects": [
     {
       "source": "/:path*",
@@ -34,8 +35,15 @@
       "has": [{ "type": "host", "value": "www.bizetciyiz.com.tr" }],
       "destination": "https://bizetciyiz.com.tr/:path*",
       "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.bizetciyiz.com" }],
+      "destination": "https://bizetciyiz.com/:path*",
+      "permanent": true
     }
   ],
+
   "rewrites": [
     {
       "source": "/:path*",
@@ -61,28 +69,31 @@
       "source": "/:path*",
       "has": [{ "type": "host", "value": "bizetciyiz.com.tr" }],
       "destination": "/bizetciyiz/:path*"
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "bizetciyiz.com" }],
+      "destination": "/bizetciyiz/:path*"
     }
   ],
+
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        }
       ]
-    },
-    {
-      "source": "/css/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400" }]
-    },
-    {
-      "source": "/js/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400" }]
-    },
-    {
-      "source": "/favicon.svg",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400" }]
     }
   ]
 }
