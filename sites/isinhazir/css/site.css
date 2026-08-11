@@ -1,0 +1,71 @@
+/* İŞİN HAZIR — clean, confident, product-like. Cool neutral greys, a single
+   decisive indigo, tight geometry and small radii. */
+
+:root {
+  --font-display: "Segoe UI", system-ui, -apple-system, "Noto Sans Arabic", sans-serif;
+  --weight-display: 700;
+  --tracking-display: -0.035em;
+
+  --bg: #ffffff;
+  --bg-alt: #f5f7fb;
+  --surface: #ffffff;
+  --surface-2: #eef2f9;
+  --border: #e0e6f0;
+  --border-strong: #c2ccdd;
+
+  --text: #0e1524;
+  --text-muted: #4b5568;
+  --text-faint: #77839a;
+
+  --accent: #2f52c8;
+  --accent-hover: #2440a5;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(47, 82, 200, 0.09);
+  --accent-line: rgba(47, 82, 200, 0.3);
+
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 14px;
+  --radius-pill: 8px;
+
+  --header-height: 62px;
+  --shadow: 0 10px 30px rgba(14, 21, 36, 0.08);
+  --shadow-sm: 0 1px 2px rgba(14, 21, 36, 0.06);
+}
+
+.site-header { background: rgba(255, 255, 255, 0.94); backdrop-filter: blur(10px); }
+.brand__name { letter-spacing: -0.01em; }
+
+.hero { background: linear-gradient(180deg, var(--bg-alt), var(--bg)); }
+.hero__art { opacity: 0.1; }
+.hero::after { content: none; }
+
+.eyebrow { letter-spacing: 0.12em; }
+
+.card { border-radius: var(--radius); }
+.card__icon { border-radius: var(--radius-sm); }
+.chip { border-radius: var(--radius-sm); font-family: var(--font-mono); font-size: 0.72rem; }
+
+.btn { border-radius: var(--radius-sm); }
+.langs { border-radius: var(--radius-sm); }
+.langs__link { border-radius: 4px; }
+
+.steps .step::before { color: var(--accent); }
+
+.panel { background: var(--bg-alt); border-radius: var(--radius); }
+.panel__list b { font-family: var(--font-body); }
+
+.faq__item { border-radius: var(--radius); }
+.acquire { border-radius: var(--radius-lg); background: var(--bg-alt); }
+
+.site-footer { background: #0e1524; border-block-start-color: #1c2437; color: #9aa6bd; }
+.site-footer .brand,
+.site-footer .footer__title { color: #f2f5fa; }
+.site-footer .footer__bottom { border-block-start-color: #1c2437; }
+.site-footer .footer__list a:hover { color: #fff; }
+.site-footer .brand__mark { color: #7d97ee; }
+.studio { background: #151d30; border-color: #232c42; color: #8d99b0; }
+.studio__brand { color: #eef2fa; }
+.studio__brand svg { color: #7d97ee; }
+.studio a { color: #b6c2da; }
+.studio a:hover { color: #fff; }

@@ -1,0 +1,58 @@
+/* QRABİYE — warm, elegant, artisan. Cream paper, cocoa ink, caramel accent,
+   serif display type. */
+
+:root {
+  --font-display: Georgia, "Iowan Old Style", "Times New Roman", "Noto Naskh Arabic", serif;
+  --weight-display: 600;
+  --tracking-display: -0.005em;
+
+  --bg: #fffaf3;
+  --bg-alt: #f8efe1;
+  --surface: #ffffff;
+  --surface-2: #f7eddf;
+  --border: #ecdcc4;
+  --border-strong: #d9c0a0;
+
+  --text: #2b1a0f;
+  --text-muted: #6a5137;
+  --text-faint: #6f5a3f;
+
+  --accent: #96551f;
+  --accent-hover: #7c4416;
+  --accent-ink: #fffaf3;
+  --accent-soft: rgba(150, 85, 31, 0.1);
+  --accent-line: rgba(150, 85, 31, 0.35);
+
+  --radius: 16px;
+  --radius-lg: 26px;
+  --shadow: 0 12px 30px rgba(83, 48, 18, 0.1);
+  --shadow-sm: 0 1px 2px rgba(83, 48, 18, 0.08);
+}
+
+body { background-image: radial-gradient(circle at 88% -8%, rgba(150, 85, 31, 0.07), transparent 46%); }
+
+.site-header { background: rgba(255, 250, 243, 0.94); backdrop-filter: blur(10px); }
+
+.brand__name { letter-spacing: 0.14em; font-size: var(--text-sm); }
+
+.eyebrow { font-family: var(--font-body); letter-spacing: 0.2em; }
+
+.hero__title { font-style: normal; }
+.hero__art { opacity: 0.1; }
+
+/* An artisan, slightly softer card */
+.card { border-radius: var(--radius); }
+.card__icon { border-radius: 50%; }
+
+.chip { background: var(--bg-alt); border-color: var(--border); }
+
+.panel { background: #fff; border-color: var(--border); box-shadow: var(--shadow-sm); }
+
+.table thead th { background: var(--bg-alt); }
+
+.acquire { background: #fff; border-color: var(--border); box-shadow: var(--shadow); }
+
+.faq__item { background: #fff; }
+
+.site-footer { background: var(--bg-alt); }
+.studio { background: #fff; }

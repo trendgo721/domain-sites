@@ -1,0 +1,74 @@
+/* BİZ ETÇİYİZ — dark, premium butcher identity. Charcoal ground, bone text,
+   a single deep red, heavy serif display in small caps spacing. */
+
+:root {
+  --font-display: Georgia, "Iowan Old Style", "Times New Roman", "Noto Naskh Arabic", serif;
+  --weight-display: 700;
+  --tracking-display: -0.01em;
+
+  --bg: #14100f;
+  --bg-alt: #1a1514;
+  --surface: #1d1817;
+  --surface-2: #241d1b;
+  --border: #332a26;
+  --border-strong: #4a3c36;
+
+  --text: #f6efe9;
+  --text-muted: #b9a99d;
+  --text-faint: #93837a;
+
+  --accent: #d8574e;
+  --accent-hover: #e4736a;
+  --accent-ink: #14100f;
+  --accent-soft: rgba(216, 87, 78, 0.14);
+  --accent-line: rgba(216, 87, 78, 0.45);
+
+  --radius-sm: 4px;
+  --radius: 6px;
+  --radius-lg: 10px;
+  --radius-pill: 4px;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.5);
+  --shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 30px 70px rgba(0, 0, 0, 0.6);
+}
+
+body {
+  background-image:
+    radial-gradient(circle at 85% -10%, rgba(216, 87, 78, 0.12), transparent 45%),
+    linear-gradient(180deg, #16110f, #14100f 40%);
+}
+
+.site-header { background: rgba(20, 16, 15, 0.9); backdrop-filter: blur(10px); }
+.site-header.is-scrolled { border-block-end-color: var(--border); }
+
+.brand__name { letter-spacing: 0.16em; font-size: var(--text-sm); text-transform: uppercase; }
+
+.eyebrow { font-family: var(--font-body); letter-spacing: 0.24em; }
+
+h1, h2 { text-wrap: balance; }
+.hero { border-block-end: 1px solid var(--border); }
+.hero__art { opacity: 0.18; }
+
+.langs { background: var(--surface-2); }
+
+.card { background: var(--surface); border-radius: var(--radius); }
+.card:hover { border-color: var(--accent-line); }
+.card__icon { border-radius: var(--radius-sm); }
+.chip { background: #2a2220; border-color: var(--border); color: var(--text-muted); }
+
+.table-wrap { background: var(--surface); border-radius: var(--radius); }
+.table thead th { background: #241d1b; color: var(--text); letter-spacing: 0.06em; }
+.table th[scope="row"] { color: var(--text); }
+
+.panel { background: var(--surface); border-inline-start: 3px solid var(--accent); border-radius: var(--radius); }
+
+.faq__item { background: var(--surface); border-radius: var(--radius); }
+
+.btn--ghost { color: var(--text); border-color: var(--border-strong); }
+.btn--ghost:hover { background: var(--surface-2); color: var(--text); border-color: var(--accent); }
+
+.acquire { background: var(--surface); border-color: var(--border); border-radius: var(--radius-lg); }
+
+.site-footer { background: #100c0b; border-block-start-color: var(--border); }
+.studio { background: var(--surface); border-color: var(--border); }

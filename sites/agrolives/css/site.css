@@ -1,0 +1,67 @@
+/* AGROLIVES — natural, professional, Mediterranean. Stone-white ground,
+   deep olive ink, a warm gold secondary. Squared-off, technical detailing. */
+
+:root {
+  --font-display: "Segoe UI", system-ui, -apple-system, "Noto Sans Arabic", sans-serif;
+  --weight-display: 700;
+  --tracking-display: -0.025em;
+
+  --bg: #ffffff;
+  --bg-alt: #f2f5ee;
+  --surface: #ffffff;
+  --surface-2: #edf1e7;
+  --border: #dde4d3;
+  --border-strong: #bcc9ac;
+
+  --text: #1a2416;
+  --text-muted: #4d5c46;
+  --text-faint: #5d6c56;
+
+  --accent: #3d6b2c;
+  --accent-hover: #2f5521;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(61, 107, 44, 0.1);
+  --accent-line: rgba(61, 107, 44, 0.35);
+
+  --gold: #7d5f12;
+
+  --radius-sm: 4px;
+  --radius: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 4px;
+}
+
+.hero { border-block-end: 1px solid var(--border); }
+.hero__art { opacity: 0.16; }
+
+.eyebrow { color: var(--gold); letter-spacing: 0.18em; }
+
+/* Technical, tabular feel */
+.card { border-radius: var(--radius); }
+.card__icon { border-radius: var(--radius-sm); }
+
+.btn { border-radius: var(--radius); }
+.langs { border-radius: var(--radius); }
+.langs__link { border-radius: var(--radius-sm); }
+
+.chip { border-radius: var(--radius-sm); background: var(--surface-2); }
+
+.step::before { color: var(--gold); }
+
+.panel { border-inline-start: 3px solid var(--accent); }
+
+.table thead th { background: var(--accent); color: #fff; border-block-end-color: var(--accent); }
+.table-wrap { border-radius: var(--radius); }
+
+.faq__item { border-radius: var(--radius); }
+.acquire { border-radius: var(--radius-lg); background: var(--surface-2); }
+
+.site-footer { background: #16200f; border-block-start-color: #26331d; color: #b9c6ae; }
+.site-footer .brand { color: #f2f6ec; }
+.site-footer .footer__title { color: #f2f6ec; }
+.site-footer .footer__bottom { border-block-start-color: #26331d; }
+.site-footer .footer__list a:hover { color: #fff; }
+.studio { background: #1d2916; border-color: #2d3b23; color: #97a58c; }
+.studio__brand { color: #eef3e8; }
+.studio a { color: #c4d3b7; }
+.studio a:hover { color: #fff; }

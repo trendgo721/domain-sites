@@ -1,0 +1,9 @@
+{
+  "sites": [
+    { "name": "qrabiye", "domain": "qrabiye.com.tr" },
+    { "name": "agrolives", "domain": "agrolives.com.tr" },
+    { "name": "onlinefidan", "domain": "onlinefidan.com.tr" },
+    { "name": "isinhazir", "domain": "isinhazir.com.tr" },
+    { "name": "bizetciyiz", "domain": "bizetciyiz.com.tr" }
+  ]
+}

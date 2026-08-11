@@ -1,0 +1,78 @@
+/* Neutral defaults. Every site overrides the palette and type in its own
+   css/site.css — nothing here carries a brand identity. */
+
+:root {
+  /* Type — system stacks only, so no font request ever blocks first paint.
+     Arabic fallbacks are listed on every stack for the /ar/ pages. */
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans Arabic", "Segoe UI Arabic", Tahoma, sans-serif;
+  --font-display: var(--font-body);
+  --font-mono: ui-monospace, "Cascadia Mono", Consolas, monospace;
+
+  --weight-display: 700;
+  --tracking-display: -0.02em;
+
+  --text-xs: 0.78rem;
+  --text-sm: 0.9rem;
+  --text-base: 1rem;
+  --text-md: 1.06rem;
+  --text-lg: clamp(1.06rem, 1.01rem + 0.24vw, 1.19rem);
+  --text-xl: clamp(1.2rem, 1.11rem + 0.42vw, 1.44rem);
+  --text-2xl: clamp(1.42rem, 1.26rem + 0.76vw, 1.9rem);
+  --text-3xl: clamp(1.68rem, 1.36rem + 1.5vw, 2.6rem);
+  --text-4xl: clamp(2.05rem, 1.5rem + 2.6vw, 3.6rem);
+
+  --leading-tight: 1.14;
+  --leading-snug: 1.32;
+  --leading-normal: 1.68;
+
+  /* Colour — light neutral base */
+  --bg: #ffffff;
+  --bg-alt: #f6f7f8;
+  --surface: #ffffff;
+  --surface-2: #f1f3f5;
+  --border: #e4e7ea;
+  --border-strong: #cbd1d7;
+
+  --text: #16191d;
+  --text-muted: #566070;
+  --text-faint: #67707e;
+
+  --accent: #2f6f4f;
+  --accent-hover: #245a3f;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(47, 111, 79, 0.1);
+  --accent-line: rgba(47, 111, 79, 0.32);
+
+  --focus: var(--accent);
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: clamp(3.5rem, 2.2rem + 5vw, 6.5rem);
+
+  /* Shape */
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+
+  --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.06);
+  --shadow: 0 10px 28px rgba(16, 24, 40, 0.08);
+  --shadow-lg: 0 24px 60px rgba(16, 24, 40, 0.12);
+
+  /* Layout */
+  --container: 1120px;
+  --container-narrow: 720px;
+  --header-height: 64px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration: 200ms;
+}

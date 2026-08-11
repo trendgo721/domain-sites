@@ -1,0 +1,67 @@
+/* ONLINE FİDAN — fresh, botanical, trustworthy. Bright white with mint
+   surfaces, leaf-green accent, generous rounding and a light e-commerce feel. */
+
+:root {
+  --font-display: "Segoe UI", system-ui, -apple-system, "Noto Sans Arabic", sans-serif;
+  --weight-display: 700;
+  --tracking-display: -0.03em;
+
+  --bg: #ffffff;
+  --bg-alt: #f0f8f3;
+  --surface: #ffffff;
+  --surface-2: #e9f5ee;
+  --border: #d6e9de;
+  --border-strong: #b0d4c0;
+
+  --text: #10231a;
+  --text-muted: #466052;
+  --text-faint: #55685e;
+
+  --accent: #137a4a;
+  --accent-hover: #0d6039;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(19, 122, 74, 0.1);
+  --accent-line: rgba(19, 122, 74, 0.32);
+
+  --radius-sm: 10px;
+  --radius: 18px;
+  --radius-lg: 28px;
+
+  --shadow: 0 14px 34px rgba(12, 74, 45, 0.1);
+  --shadow-sm: 0 1px 2px rgba(12, 74, 45, 0.07);
+}
+
+body {
+  background-image: radial-gradient(circle at 92% -10%, rgba(19, 122, 74, 0.09), transparent 45%);
+}
+
+.site-header { background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(10px); }
+
+.hero__art { opacity: 0.13; }
+
+/* Softer, product-like cards */
+.card { box-shadow: var(--shadow-sm); }
+.card__icon { border-radius: 14px; }
+.chip { background: var(--surface-2); border-color: var(--border); color: var(--accent); }
+
+.panel { background: var(--bg-alt); border-color: var(--border); border-radius: var(--radius); }
+
+.table-wrap { box-shadow: var(--shadow-sm); }
+.table thead th { background: var(--surface-2); color: var(--text); }
+
+.steps .step::before {
+  display: grid;
+  place-items: center;
+  inline-size: 2rem;
+  block-size: 2rem;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  inset-block-start: -0.15rem;
+  font-size: var(--text-xs);
+}
+
+.faq__item { border-radius: var(--radius); }
+.acquire { background: var(--bg-alt); }
+
+.site-footer { background: var(--bg-alt); }
+.studio { background: #fff; }

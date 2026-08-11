@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="AGROLIVES">
+  <rect width="64" height="64" rx="12" fill="#f2f5ee"/>
+  <ellipse cx="30" cy="38" rx="16" ry="20" transform="rotate(-24 30 38)" fill="none" stroke="#3d6b2c" stroke-width="4"/>
+  <path d="M34 19c3-6 8.5-9.6 15-9.6-.4 6.6-4.6 11.6-11.4 13.2" fill="none" stroke="#a4802a" stroke-width="4" stroke-linejoin="round"/>
+</svg>
