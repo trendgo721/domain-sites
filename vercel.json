@@ -78,10 +78,120 @@
                          "has":  [
                                      {
                                          "type":  "host",
+                                         "value":  "www.qrabiye.com.tr"
+                                     }
+                                 ],
+                         "destination":  "/qrabiye/"
+                     },
+                     {
+                         "source":  "/:path*",
+                         "has":  [
+                                     {
+                                         "type":  "host",
+                                         "value":  "www.qrabiye.com.tr"
+                                     }
+                                 ],
+                         "destination":  "/qrabiye/:path*"
+                     },
+                     {
+                         "source":  "/",
+                         "has":  [
+                                     {
+                                         "type":  "host",
                                          "value":  "www.agrolives.com.tr"
                                      }
                                  ],
                          "destination":  "/agrolives/"
+                     },
+                     {
+                         "source":  "/:path*",
+                         "has":  [
+                                     {
+                                         "type":  "host",
+                                         "value":  "www.agrolives.com.tr"
+                                     }
+                                 ],
+                         "destination":  "/agrolives/:path*"
+                     },
+                     {
+                         "source":  "/",
+                         "has":  [
+                                     {
+                                         "type":  "host",
+                                         "value":  "www.onlinefidan.com.tr"
+                                     }
+                                 ],
+                         "destination":  "/onlinefidan/"
+                     },
+                     {
+                         "source":  "/:path*",
+                         "has":  [
+                                     {
+                                         "type":  "host",
+                                         "value":  "www.onlinefidan.com.tr"
+                                     }
+                                 ],
+                         "destination":  "/onlinefidan/:path*"
+                     },
+                     {
+                         "source":  "/",
+                         "has":  [
+                                     {
+                                         "type":  "host",
+                                         "value":  "www.isinhazir.com.tr"
+                                     }
+                                 ],
+                         "destination":  "/isinhazir/"
+                     },
+                     {
+                         "source":  "/:path*",
+                         "has":  [
+                                     {
+                                         "type":  "host",
+                                         "value":  "www.isinhazir.com.tr"
+                                     }
+                                 ],
+                         "destination":  "/isinhazir/:path*"
+                     },
+                     {
+                         "source":  "/",
+                         "has":  [
+                                     {
+                                         "type":  "host",
+                                         "value":  "www.bizetciyiz.com.tr"
+                                     }
+                                 ],
+                         "destination":  "/bizetciyiz/"
+                     },
+                     {
+                         "source":  "/:path*",
+                         "has":  [
+                                     {
+                                         "type":  "host",
+                                         "value":  "www.bizetciyiz.com.tr"
+                                     }
+                                 ],
+                         "destination":  "/bizetciyiz/:path*"
+                     },
+                     {
+                         "source":  "/",
+                         "has":  [
+                                     {
+                                         "type":  "host",
+                                         "value":  "www.bizetciyiz.com"
+                                     }
+                                 ],
+                         "destination":  "/bizetciyiz/"
+                     },
+                     {
+                         "source":  "/:path*",
+                         "has":  [
+                                     {
+                                         "type":  "host",
+                                         "value":  "www.bizetciyiz.com"
+                                     }
+                                 ],
+                         "destination":  "/bizetciyiz/:path*"
                      },
                      {
                          "source":  "/:path*",
